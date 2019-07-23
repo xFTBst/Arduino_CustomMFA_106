@@ -122,11 +122,15 @@ void loop() {
   //Draw hour:minute
   tft.drawCentreString(ftime, 64, 2, 1);
   //Draw Fual tank
-  tft.drawRightString(fueldTank, 128, 2, 1);
+  tft.drawRightString(fueldTank, 112, 2, 1);
 
   //Draw Fual tank
   tft.setTextColor(WHITE, BLACK);
-  tft.drawRightString(extTemp, 128, 140, 1);
+  
+  tft.drawBitmap(112,136,iconSun, 16, 16, ST7735_YELLOW);
+  tft.drawBitmap(112,50,iconFuel, 16, 16, ST7735_WHITE);
+  
+  tft.drawRightString(extTemp, 116, 140, 1);
   tft.drawRightString("- C", 128, 150, 1);
 
   tft.drawRightString("0 KM", 0, 140, 1);
@@ -151,11 +155,11 @@ void loop() {
   //Draw hour:minute
   tft.drawCentreString(ftime, 64, 2, 1);
   //Draw Fual tank
-  tft.drawRightString(fueldTank, 128, 2, 1);
+  tft.drawRightString(fueldTank, 112, 2, 1);
 
   //Draw Fual tank
   tft.setTextColor(WHITE, BLACK);
-  tft.drawRightString(extTemp, 128, 140, 1);
+  tft.drawRightString(extTemp, 116, 140, 1);
   tft.drawRightString("- C", 128, 150, 1);
 
   tft.drawRightString("0 KM", 0, 140, 1);
