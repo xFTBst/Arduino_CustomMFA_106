@@ -45,7 +45,7 @@ char  PrevstrTime = "-";
 //DisplayMode
 // 0 RPM
 // 1 KM/H
-int ScreenDisplay = 0;
+int ScreenDisplay = 1;
 int timerDP = 0;
 
 
